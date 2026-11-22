@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cello Giyim — İstanbul Bağcılar Erkek Giyim</title>
+<meta name="description" content="Cello Giyim: 18 yıldır İstanbul Bağcılar'da. Mont, sweat ve kazak modelleri. Türkiye'nin her yerine kargo, Havale/EFT ile ödeme.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cello Giyim — Online Mağaza">
+<meta property="og:description" content="18 yıldır İstanbul Bağcılar'da. Mont, sweat ve kazak modelleri, Türkiye'nin her yerine kargo.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#d7102f; --red-d:#b00c26; --ink:#111111; --muted:#6b6b6b; --line:#e6e6e6;
+  --soft:#f4f4f4; --tile:#f1f1f1; --green:#25d366; --green-d:#128c4b;
+  --f:'Poppins',system-ui,-apple-system,Segoe UI,sans-serif; --max:1220px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);font-size:14px;color:var(--ink);background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;font-size:inherit}
+input,textarea{font-family:inherit;font-size:14px}
+svg{display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+.ico{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* TOP BAR */
+.topbar{background:#ededed;font-size:12.5px;color:#333}
+.topbar .in{display:flex;justify-content:space-between;align-items:center;height:36px;gap:12px}
+.topbar b{color:var(--red);font-weight:600}
+.topbar .r{display:flex;gap:18px;font-weight:500}
+.topbar a:hover{color:var(--red)}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.hd{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:76px}
+.menu-btn{display:flex;align-items:center;gap:10px;font-weight:500;font-size:13px;justify-self:start;padding:6px 0}
+.logo{display:flex;align-items:baseline;gap:7px;font-weight:900;font-size:28px;letter-spacing:-.03em;line-height:1}
+.logo .a{color:var(--red)}
+.logo .b{color:var(--ink)}
+.hd-r{display:flex;justify-content:flex-end;align-items:center;gap:6px}
+.icon-btn{position:relative;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;transition:background .15s}
+.icon-btn:hover{background:var(--soft)}
+.badge{position:absolute;top:3px;right:1px;min-width:18px;height:18px;border-radius:9px;background:var(--red);color:#fff;font-size:10.5px;font-weight:600;display:grid;place-items:center;padding:0 4px;line-height:1}
+.search-row{display:none;padding:0 0 14px}
+.search-row.open{display:block}
+.search{display:flex;background:var(--soft);border-radius:4px;overflow:hidden}
+.search input{flex:1;border:none;background:transparent;padding:13px 16px;outline:none}
+.search button{padding:0 20px;font-weight:600;letter-spacing:.02em}
+.search button:hover{color:var(--red)}
+
+/* HERO */
+.hero{margin-top:26px}
+.hero-box{position:relative;overflow:hidden;background:#efefef;border-radius:4px;display:grid;grid-template-columns:1.08fr .92fr;min-height:480px}
+.hero-l{position:relative;z-index:3;padding:46px 0 38px 54px;display:flex;flex-direction:column;align-items:flex-start}
+.dots{position:absolute;width:46px;height:74px;background-image:radial-gradient(var(--red) 2.3px,transparent 2.8px);background-size:14px 14px;z-index:2}
+.dots.tl{top:14px;left:20px}
+.dots.br{right:22px;bottom:16px;width:60px;height:46px;background-image:radial-gradient(#fff 2.3px,transparent 2.8px);z-index:4}
+.tilt{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:clamp(14px,2.1vw,30px);padding:.18em .7em;transform:rotate(-4deg);box-shadow:0 6px 0 rgba(0,0,0,.12);letter-spacing:.01em;text-transform:uppercase}
+.big{font-weight:900;font-size:clamp(34px,6.6vw,94px);line-height:.92;letter-spacing:-.035em;margin-top:.34em;text-transform:uppercase}
+.from{font-weight:700;font-size:clamp(12px,1.4vw,19px);margin-top:.9em;text-transform:uppercase;letter-spacing:.02em;color:#333}
+.pricebox{display:inline-block;background:var(--red);color:#fff;font-weight:900;font-size:clamp(32px,6.2vw,88px);line-height:1;padding:.06em .32em .12em;transform:skewX(-9deg);border-radius:.12em;margin-top:.12em;box-shadow:0 .1em 0 rgba(0,0,0,.14);letter-spacing:-.03em}
+.pricebox span{display:inline-block;transform:skewX(9deg)}
+.pricebox small{font-size:.32em;font-weight:700;letter-spacing:0;margin-left:.15em}
+.feats{display:flex;margin-top:24px}
+.feat{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 22px;border-left:1.5px solid #c9c9c9}
+.feat:first-child{border-left:none;padding-left:0}
+.feat .fi{width:44px;height:44px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;margin-bottom:8px}
+.feat .fi .ico{width:22px;height:22px;stroke-width:2}
+.feat .ft{font-weight:700;font-size:12.5px;text-transform:uppercase;line-height:1.2}
+.feat .fs{font-size:10.5px;font-weight:600;text-transform:uppercase;color:#444;margin-top:2px}
+.cta{display:inline-flex;align-items:center;gap:12px;background:var(--red);color:#fff;border-radius:40px;padding:8px 22px 8px 8px;font-weight:700;font-size:clamp(12px,1.45vw,19px);margin-top:26px;box-shadow:0 6px 16px rgba(215,16,47,.35);transition:background .15s,transform .12s;text-transform:uppercase}
+.cta:hover{background:var(--red-d)}.cta:active{transform:scale(.98)}
+.cta .ci{width:2.1em;height:2.1em;border-radius:50%;background:#fff;color:var(--red);display:grid;place-items:center}
+.cta .ci .ico{width:1.1em;height:1.1em;stroke-width:2.2}
+.hero-r{position:relative;overflow:hidden}
+.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero-r:before{content:"";position:absolute;top:-10%;bottom:-10%;left:-28%;width:46%;background:var(--red);transform:skewX(-16deg);z-index:2;box-shadow:12px 0 0 rgba(255,255,255,.85)}
+.seal{position:absolute;z-index:5;left:51%;top:50%;transform:translate(-50%,-50%);width:clamp(74px,12vw,160px);height:clamp(74px,12vw,160px);border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;font-weight:800;font-size:clamp(10px,1.45vw,19px);line-height:1.15;text-transform:uppercase;box-shadow:0 0 0 5px #fff,0 0 0 7px var(--red),0 10px 24px rgba(0,0,0,.25)}
+.seal b{display:block;font-size:2em;line-height:1;font-weight:900}
+.seal:after{content:"";position:absolute;inset:7%;border:2px dashed rgba(255,255,255,.7);border-radius:50%}
+.slash{position:absolute;z-index:4;left:43%;bottom:6%;width:70px;height:40px;background:repeating-linear-gradient(115deg,var(--red) 0 4px,transparent 4px 13px)}
+
+/* TILES */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+.tile{position:relative;aspect-ratio:1/1;overflow:hidden;border-radius:2px;background:var(--tile);cursor:pointer}
+.tile.prod{display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;padding:5% 5% 4.5%}
+.tile .tt{font-weight:800;font-size:clamp(15px,2.5vw,34px);line-height:1.02;text-transform:uppercase;letter-spacing:-.01em;position:relative;z-index:2}
+.tile.prod .im{position:absolute;left:4%;right:4%;top:17%;bottom:29%}
+.tile.prod .im img{position:absolute;top:0;left:50%;height:100%;width:auto;max-width:none;transform:translateX(-50%);transition:transform .5s;-webkit-mask-image:radial-gradient(ellipse 72% 72% at 50% 50%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 72% 72% at 50% 50%,#000 62%,transparent 100%)}
+.tile.prod .bot{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
+.tile:hover .im img{transform:translateX(-50%) scale(1.04)}
+.tile:hover>img{transform:scale(1.04)}
+.tile .pp{font-weight:900;font-size:clamp(28px,4.6vw,62px);line-height:.95;letter-spacing:-.04em;position:relative;z-index:2}
+.tile .op{font-size:clamp(11px,1.3vw,17px);font-weight:600;color:#777;text-decoration:line-through;margin-bottom:2px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#111;color:#fff;border-radius:7px;padding:.45em 1.1em;font-weight:600;font-size:clamp(11px,1.25vw,16px);margin-top:.55em;position:relative;z-index:2;transition:background .15s}
+.pill .ico{width:1.15em;height:1.15em;stroke-width:2}
+.tile:hover .pill{background:var(--red)}
+.tile.cat>img{position:absolute;left:-10%;top:15%;width:120%;max-width:none;height:92%;object-fit:cover;object-position:center top;transition:transform .5s}
+.tile.cat .cin{position:absolute;inset:0;padding:5.5%;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;z-index:2}
+.tile.cat .tt{font-size:clamp(17px,3vw,40px);text-align:left}
+.tile.cat.dark .tt{color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.tile.cat .pill{background:#fff;color:#111;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.tile.cat:hover .pill{background:var(--red);color:#fff}
+.tile.cat:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,var(--tb) 16%,transparent 34%)}
+.tile.red{background:var(--red);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:8%}
+.tile.red .tt{font-size:clamp(18px,3vw,40px)}
+.tile.red p{font-size:clamp(11px,1.25vw,16px);opacity:.92;margin-top:.7em;max-width:24ch}
+.tile.red .pill{background:#fff;color:var(--red);margin-top:1.2em}
+.tile.red:hover .pill{background:#111;color:#fff}
+.tile.red:after{content:"";position:absolute;right:-18%;bottom:-18%;width:60%;height:60%;border-radius:50%;border:22px solid rgba(255,255,255,.12)}
+
+/* SECTION TITLE */
+.sec-title{display:flex;align-items:center;gap:26px;margin:58px 0 24px}
+.sec-title:before,.sec-title:after{content:"";flex:1;height:1px;background:#d6d6d6}
+.sec-title h2{font-weight:700;font-size:clamp(19px,2.4vw,30px);text-transform:uppercase;text-align:center}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px}
+.chip{padding:8px 16px;border-radius:6px;border:1px solid var(--line);font-size:13px;font-weight:600;color:#444;background:#fff;transition:all .15s}
+.chip:hover{border-color:#111;color:#111}
+.chip.active{background:#111;border-color:#111;color:#fff}
+.result-note{text-align:center;color:var(--muted);font-size:13px;margin:-14px 0 22px}
+
+/* PRODUCT GRID */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px 22px}
+.card{display:flex;flex-direction:column}
+.card .ph{position:relative;aspect-ratio:3/4;overflow:hidden;cursor:pointer;background:var(--soft)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card .ph img.contain{object-fit:contain}
+.card:hover .ph img{transform:scale(1.04)}
+.rb{position:absolute;top:12px;right:12px;background:var(--red);color:#fff;font-size:12px;font-weight:600;padding:3px 11px;border-radius:20px;z-index:2}
+.rb.new{background:#111}
+.card .qv{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(255,255,255,.96);color:#111;font-size:12.5px;font-weight:600;text-align:center;padding:10px;border-radius:4px;transform:translateY(130%);transition:transform .25s;z-index:2}
+.card:hover .qv{transform:none}
+.card .nm{font-size:15px;margin-top:14px;line-height:1.35;cursor:pointer}
+.card .nm:hover{color:var(--red)}
+.card .sr{font-size:12px;color:var(--muted);margin-top:3px;letter-spacing:.02em}
+.card .prow{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px}
+.prc{display:flex;align-items:baseline;flex-wrap:wrap;column-gap:8px}
+.oldp{font-size:13px;color:#8a8a8a;text-decoration:line-through;font-weight:500}
+.np{font-weight:700;font-size:18px;letter-spacing:-.01em}
+.fav{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;flex-shrink:0;transition:background .15s,color .15s}
+.fav:hover{background:var(--soft)}
+.fav.on{color:var(--red)}
+.fav.on .ico{fill:var(--red)}
+.addbtn{height:42px;border-radius:4px;background:#111;color:#fff;font-weight:600;font-size:13px;transition:background .15s;white-space:nowrap;padding:0 10px}
+.addbtn:hover{background:var(--red)}
+.card .addbtn{margin-top:12px;width:100%}
+.empty-res{grid-column:1/-1;text-align:center;padding:50px 20px;color:var(--muted)}
+.empty-res button{margin-top:14px;text-decoration:underline;font-weight:600;color:#111}
+
+/* STORE */
+.store{margin-top:70px;background:#111;color:#fff;border-radius:6px;overflow:hidden;display:grid;grid-template-columns:1.25fr 1fr;position:relative}
+.store:before{content:"";position:absolute;right:-8%;top:-30%;width:46%;height:160%;background:var(--red);transform:skewX(-16deg);opacity:.95}
+.store-l{position:relative;z-index:2;padding:52px 48px}
+.store .ey{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#ff4d67}
+.store h2{font-size:clamp(26px,3.4vw,44px);font-weight:800;line-height:1.08;letter-spacing:-.02em;margin:10px 0 14px}
+.store p{color:rgba(255,255,255,.72);font-size:15px;line-height:1.7;max-width:46ch}
+.store-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.sbtn{display:inline-flex;align-items:center;gap:9px;height:46px;padding:0 20px;border-radius:6px;font-weight:600;font-size:14px;transition:all .15s}
+.sbtn .ico{width:19px;height:19px}
+.sbtn.r{background:var(--red);color:#fff}.sbtn.r:hover{background:#fff;color:var(--red)}
+.sbtn.o{border:1.5px solid rgba(255,255,255,.4)}.sbtn.o:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.sbtn.g{background:var(--green);color:#fff}.sbtn.g:hover{background:var(--green-d)}
+.store-r{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;gap:22px;padding:44px 48px 44px 120px}
+.stat .n{font-size:clamp(40px,5vw,64px);font-weight:900;line-height:1;letter-spacing:-.03em}
+.stat .l{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;opacity:.9;margin-top:4px}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{border:1px solid var(--line);border-radius:8px;padding:26px 24px;position:relative;background:#fff}
+.step .no{width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px}
+.step h4{font-size:17px;font-weight:700;margin:14px 0 6px}
+.step p{color:#555;font-size:14px;line-height:1.65}
+
+/* TRUST */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:64px;padding-top:40px;border-top:1px solid var(--line)}
+.tr{display:flex;align-items:center;gap:18px;border:1px solid var(--line);border-radius:8px;padding:24px 20px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+.tr .ico{width:42px;height:42px;stroke-width:1.4;flex-shrink:0}
+.tr .tt{font-weight:700;font-size:16.5px;color:var(--red);text-transform:uppercase;line-height:1.2}
+.tr .ts{font-size:13.5px;color:#333;margin-top:4px;line-height:1.45}
+
+/* KEYWORDS + ABOUT + FAQ */
+.kw{margin-top:48px}
+.kw h4{font-size:13px;font-weight:500;text-transform:uppercase;margin-bottom:14px}
+.kw .chips{justify-content:flex-start;margin:0}
+.about{margin-top:52px}
+.about h2{font-weight:400;font-size:clamp(22px,2.6vw,30px);margin-bottom:14px}
+.about p{font-size:14px;line-height:1.75;color:#222;max-width:110ch}
+.faq-wrap{margin-top:30px;max-width:860px}
+.faq{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:17px 0;font-weight:600;font-size:15px;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pl{color:var(--red);font-size:20px;font-weight:400;transition:transform .2s;line-height:1}
+.faq[open] summary .pl{transform:rotate(45deg)}
+.faq .a{padding:0 0 18px;color:#444;font-size:14px;line-height:1.7}
+
+/* FOOTER */
+footer{margin-top:70px;border-top:1px solid var(--line);background:#fafafa}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:36px;padding:52px 0 40px}
+.fg .logo{font-size:26px}
+.fg p{color:#555;font-size:13.5px;line-height:1.7;margin-top:14px;max-width:34ch}
+.fc h5{font-size:13px;font-weight:700;text-transform:uppercase;margin-bottom:14px}
+.fc a{display:block;font-size:13.5px;color:#444;margin-bottom:10px;cursor:pointer}
+.fc a:hover{color:var(--red)}
+.pays{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.pays span{font-size:11px;font-weight:600;border:1px solid #d5d5d5;border-radius:4px;padding:4px 8px;color:#444;background:#fff}
+.fb{border-top:1px solid var(--line);padding:18px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:12.5px;color:#777}
+
+/* FLOATING */
+.wa-float{position:fixed;right:18px;bottom:96px;width:54px;height:54px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;z-index:55;box-shadow:0 6px 18px rgba(37,211,102,.45);transition:transform .15s}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:30px;height:30px}
+.top-float{position:fixed;right:24px;bottom:34px;width:42px;height:42px;border-radius:50%;background:#111;color:#fff;display:grid;place-items:center;z-index:55;opacity:0;pointer-events:none;transition:opacity .2s}
+.top-float.show{opacity:1;pointer-events:auto}
+.bnav{display:none}
+
+/* OVERLAYS */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .25s;z-index:80}
+.overlay.open{opacity:1;pointer-events:auto}
+.side{position:fixed;top:0;height:100%;width:min(410px,92vw);background:#fff;z-index:90;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.side.left{left:0;transform:translateX(-100%)}
+.side.right{right:0;transform:translateX(100%)}
+.side.open{transform:none}
+.side-h{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--line)}
+.side-h h3{font-size:18px;font-weight:700}
+.xbtn{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--soft)}
+.xbtn .ico{width:18px;height:18px}
+.mlist a,.mlist button{display:flex;justify-content:space-between;align-items:center;width:100%;padding:15px 20px;border-bottom:1px solid var(--line);font-weight:600;font-size:15px;text-transform:uppercase;text-align:left}
+.mlist a:hover,.mlist button:hover{color:var(--red)}
+.mlist .sm{font-weight:500;text-transform:none;font-size:14px;color:#444}
+.mlist .ico{width:18px;height:18px}
+.side-items{flex:1;overflow:auto;padding:4px 20px}
+.ci{display:flex;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}
+.ci .cim{width:66px;height:88px;flex-shrink:0;background:var(--soft);overflow:hidden}
+.ci .cim img{width:100%;height:100%;object-fit:cover}
+.ci .cd{flex:1;min-width:0}
+.ci .cn{font-weight:600;font-size:14px}
+.ci .cm{font-size:12px;color:var(--muted);margin:2px 0 8px}
+.qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:4px;height:40px}
+.qty button{width:32px;height:100%;font-size:17px;color:#555}
+.qty button:hover{color:var(--red)}
+.qty input{width:40px;height:100%;border:none;text-align:center;font-weight:600;outline:none;-moz-appearance:textfield;background:transparent}
+.qty input::-webkit-outer-spin-button,.qty input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.ci .qty{height:32px;display:inline-flex}
+.ci .qty button{width:28px}
+.ci .qty span{min-width:28px;text-align:center;font-weight:600;font-size:13px}
+.ci .cp{font-weight:700;font-size:15px;text-align:right;white-space:nowrap}
+.ci .rm{display:block;font-size:12px;color:var(--muted);text-decoration:underline;margin-top:6px;margin-left:auto}
+.empty{text-align:center;color:var(--muted);padding:60px 20px;line-height:1.7}
+.empty .addbtn{margin-top:16px;padding:0 22px}
+.side-f{padding:16px 20px 20px;border-top:1px solid var(--line);background:#fafafa}
+.shipbar{font-size:13px;line-height:1.5;padding:11px 13px;border-radius:6px;margin-bottom:12px;background:#fff;border:1px solid var(--line)}
+.shipbar.ok{background:#effaf2;color:#1b6a33;border-color:#c9ebd3}
+.shipbar .trk{height:5px;background:#eee;border-radius:3px;margin-top:8px;overflow:hidden}
+.shipbar .fill{height:100%;background:var(--red);transition:width .3s}
+.shipbar.ok .fill{background:#1b6a33}
+.sr2{display:flex;justify-content:space-between;font-size:13.5px;color:#555;margin-bottom:6px}
+.sr2.total{font-size:17px;color:#111;font-weight:700;margin:10px 0 14px}
+.bigbtn{width:100%;height:50px;border-radius:6px;background:var(--red);color:#fff;font-weight:700;font-size:15px;transition:background .15s;display:flex;align-items:center;justify-content:center;gap:8px}
+.bigbtn:hover{background:var(--red-d)}
+.bigbtn.dark{background:#111}.bigbtn.dark:hover{background:var(--red)}
+.modal{position:fixed;z-index:95;left:50%;top:50%;transform:translate(-50%,-47%);width:min(900px,94vw);max-height:92vh;overflow:auto;background:#fff;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+.modal.open{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}
+.modal .xbtn{position:absolute;top:14px;right:14px;z-index:6;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.qv-grid{display:grid;grid-template-columns:1fr 1fr}
+.qv-img{aspect-ratio:3/4;background:var(--soft);position:relative}
+.qv-img img{width:100%;height:100%;object-fit:cover}
+.qv-img img.contain{object-fit:contain}
+.qv-b{padding:30px 28px}
+.qv-b .ct{font-size:12px;font-weight:600;color:var(--red);text-transform:uppercase;letter-spacing:.06em}
+.qv-b h3{font-size:25px;font-weight:700;line-height:1.2;margin:6px 0 10px}
+.qv-b .prc .np{font-size:28px;font-weight:800;letter-spacing:-.02em}
+.qv-b .prc .oldp{font-size:16px}
+.save{display:inline-block;background:#fff0f2;color:var(--red);font-weight:600;font-size:12.5px;padding:3px 10px;border-radius:4px;margin-top:6px}
+.qv-b .desc{color:#444;font-size:14px;line-height:1.65;margin:14px 0 18px}
+.lblrow{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}
+.lblrow b{font-size:13.5px}
+.lblrow button{font-size:12.5px;text-decoration:underline;color:#444}
+.sizes{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px;padding:2px;border-radius:8px;transition:box-shadow .2s}
+.sz{min-width:50px;height:44px;border:1px solid #d6d6d6;border-radius:6px;font-weight:600;font-size:14px;padding:0 10px;transition:all .15s;background:#fff}
+.sz:hover{border-color:#111}
+.sz.on{background:#111;color:#fff;border-color:#111}
+.sizes.err{box-shadow:0 0 0 2px var(--red)}
+.szmsg{font-size:12.5px;color:var(--red);min-height:18px;margin-bottom:8px}
+.qv-buy{display:grid;grid-template-columns:auto 1fr;gap:10px}
+.qv-buy .qty{height:50px}
+.qv-buy .addbtn{height:50px;font-size:15px;background:var(--red)}
+.qv-buy .addbtn:hover{background:var(--red-d)}
+.btn-wa{margin-top:10px;width:100%;height:48px;border-radius:6px;border:1.5px solid var(--green);color:var(--green-d);font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;transition:background .15s}
+.btn-wa:hover{background:#effaf2}
+.btn-wa svg{width:20px;height:20px}
+.perks{list-style:none;margin-top:18px;border-top:1px solid var(--line);padding-top:14px;display:grid;gap:8px}
+.perks li{display:flex;align-items:center;gap:10px;font-size:13.5px;color:#333}
+.perks .ico{width:18px;height:18px;color:var(--red);flex-shrink:0}
+.spec{list-style:none;border-top:1px solid var(--line);margin-top:16px}
+.spec li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.spec li span:first-child{color:var(--muted)}
+.share{margin-top:14px;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:7px;color:#444}
+.share:hover{color:var(--red)}
+.share .ico{width:17px;height:17px}
+.co-grid{display:grid;grid-template-columns:1.25fr .95fr}
+.co-form{padding:28px}
+.co-form h3{font-size:22px;font-weight:700}
+.co-form .sub{font-size:13.5px;color:var(--muted);margin:2px 0 20px}
+.field{margin-bottom:13px}
+.field label{display:block;font-size:12px;font-weight:600;margin-bottom:5px;color:#333}
+.field input,.field textarea{width:100%;padding:11px 13px;border:1px solid #d9d9d9;border-radius:5px;outline:none;transition:border-color .15s}
+.field input:focus,.field textarea:focus{border-color:#111}
+.field.err input,.field.err textarea{border-color:var(--red);background:#fff7f8}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.plbl{font-size:13px;font-weight:700;margin:16px 0 8px}
+.paybox{border:1.5px solid var(--red);background:#fff7f8;border-radius:8px;padding:14px 16px}
+.paybox .pt{font-weight:700;font-size:14.5px;display:flex;align-items:center;gap:8px}
+.paybox .pt:before{content:"";width:16px;height:16px;border-radius:50%;border:5px solid var(--red);background:#fff}
+.paybox .pd{font-size:12.5px;color:#555;margin:4px 0 0 24px}
+.iban{margin-top:12px;background:#fff;border:1px dashed #e3a5b0;border-radius:6px;padding:11px 12px;font-size:13px;line-height:1.7}
+.iban b{font-weight:600}
+.copy{margin-top:8px;font-size:12.5px;font-weight:600;color:var(--red);display:inline-flex;align-items:center;gap:6px}
+.copy .ico{width:15px;height:15px}
+.co-sum{padding:28px;background:#fafafa;border-left:1px solid var(--line)}
+.co-sum h4{font-size:13px;font-weight:700;text-transform:uppercase;margin-bottom:12px}
+.co-line{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;padding:8px 0;border-bottom:1px solid var(--line)}
+.co-line .q{color:var(--muted)}
+.secure{font-size:12px;color:var(--muted);text-align:center;margin-top:12px;line-height:1.5}
+.done{padding:46px 30px;text-align:center;max-width:520px;margin:0 auto}
+.done .ok{width:70px;height:70px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;margin:0 auto 18px;font-size:32px}
+.done h3{font-size:26px;font-weight:700}
+.done .ono{font-weight:700;font-size:16px;margin:8px 0 16px;color:#444}
+.done p{color:#555;line-height:1.7}
+.done .iban{text-align:left;margin:18px 0 0}
+.done .bigbtn{margin-top:14px}
+.sgt{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+.sgt th,.sgt td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:center}
+.sgt th{background:#fafafa;font-weight:600}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,20px);background:#111;color:#fff;padding:12px 22px;border-radius:6px;font-size:13.5px;opacity:0;pointer-events:none;transition:all .3s;z-index:120;max-width:92vw;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .trust{grid-template-columns:1fr 1fr}
+  .fg{grid-template-columns:1fr 1fr}
+  .hero-box{min-height:390px}
+  .hero-l{padding:34px 0 30px 34px}
+  .feat{padding:0 12px}
+  .store{grid-template-columns:1fr}
+  .store:before{right:-30%;width:70%;top:auto;bottom:-40%;height:80%}
+  .store-r{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;padding:0 48px 44px;gap:34px}
+  .steps{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  body{padding-bottom:64px}
+  .topbar{display:none}
+  .hd{height:62px}
+  .menu-btn{flex-direction:column;gap:0;font-size:9px;font-weight:600}
+  .menu-btn span{order:-1}
+  .logo{font-size:24px}
+  .hide-m{display:none}
+  .search-row{display:block}
+  .wrap{padding:0 12px}
+  .hero{margin-top:10px}
+  .hero-box{min-height:0;grid-template-columns:1.12fr .88fr}
+  .hero-l{padding:22px 0 18px 16px}
+  .dots.tl{top:6px;left:6px;transform:scale(.6);transform-origin:top left}
+  .dots.br{display:none}
+  .feats{display:none}
+  .seal{left:61%;top:46%}
+  .cta{margin-top:14px;padding:5px 14px 5px 5px;gap:8px}
+  .tiles{grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+  .sec-title{margin:38px 0 16px;gap:14px}
+  .grid{grid-template-columns:1fr 1fr;gap:24px 12px}
+  .card .nm{font-size:13.5px;margin-top:10px}
+  .np{font-size:16px}
+  .oldp{font-size:12px}
+  .card .qv{display:none}
+  .card .addbtn{height:40px;font-size:12.5px}
+  .store{margin-top:44px;border-radius:4px}
+  .store-l{padding:32px 22px 10px}
+  .store-r{padding:14px 22px 30px;gap:20px}
+  .step{padding:18px;display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:start}
+  .step .no{grid-row:span 2;width:38px;height:38px;font-size:15px}
+  .step h4{margin:6px 0 4px}
+  .stat .n{font-size:34px}
+  .stat .l{font-size:11px}
+  .sbtn{height:44px;padding:0 16px;font-size:13.5px}
+  .trust{grid-template-columns:1fr;gap:10px;margin-top:44px;padding-top:24px}
+  .tr{padding:18px}
+  .fg{grid-template-columns:1fr;gap:26px;padding:38px 0 28px}
+  .qv-grid,.co-grid{grid-template-columns:1fr}
+  .qv-img{aspect-ratio:1/1}
+  .qv-b{padding:22px 18px 0}
+  .qv-buy{position:sticky;bottom:0;background:#fff;padding:12px 0 14px;z-index:4;box-shadow:0 -8px 14px -10px rgba(0,0,0,.18)}
+  .co-sum{border-left:none;border-top:1px solid var(--line)}
+  .co-form,.co-sum{padding:22px 18px}
+  .modal{width:100vw;height:100%;max-height:100%;border-radius:0;left:0;top:0;transform:translateY(12px)}
+  .modal.open{transform:none}
+  .two{grid-template-columns:1fr}
+  .wa-float{bottom:80px;right:14px;width:52px;height:52px}
+  .top-float{display:none}
+  .bnav{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;height:62px;background:#fff;border-top:1px solid var(--line);z-index:58}
+  .bnav button,.bnav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:11.5px;font-weight:500;position:relative}
+  .bnav .ico{width:22px;height:22px}
+  .bnav .badge{top:4px;right:calc(50% - 22px)}
+  .toast{bottom:auto;top:12px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap in"><span id="topLeft"></span><span class="r"><a id="topMap" target="_blank" rel="noopener"></a><a id="topWa" target="_blank" rel="noopener">WhatsApp Sipariş</a></span></div></div>
+
+<header>
+  <div class="wrap hd">
+    <button class="menu-btn" onclick="openSide('menu')" aria-label="Menü"><svg class="ico" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>MENU</span></button>
+    <a href="#" class="logo" id="logo" aria-label="Ana sayfa" onclick="goHome();return false"></a>
+    <div class="hd-r">
+      <button class="icon-btn hide-m" onclick="toggleSearch()" aria-label="Ara"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn hide-m" onclick="showFavs()" aria-label="Favoriler"><svg class="ico" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><span class="badge" data-fav>0</span></button>
+      <button class="icon-btn" onclick="openSide('cart')" aria-label="Sepet"><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="badge" data-cart>0</span></button>
+    </div>
+  </div>
+  <div class="search-row" id="searchRow"><div class="wrap"><form class="search" onsubmit="doSearch(event)"><input id="q" type="search" placeholder="Arama" autocomplete="off" aria-label="Ürün ara"><button type="submit">ARA</button></form></div></div>
+</header>
+
+<main class="wrap">
+  <section class="hero"><div class="hero-box" id="hero"></div></section>
+  <section class="tiles" id="tiles"></section>
+
+  <section id="urunler">
+    <div class="sec-title"><h2 id="gridTitle">Yeni Sezon</h2></div>
+    <div class="chips" id="filters"></div>
+    <div class="result-note" id="resultNote"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="store" id="magaza"></section>
+
+  <section id="nasil">
+    <div class="sec-title"><h2>Nasıl Sipariş Verilir?</h2></div>
+    <div class="steps" id="steps"></div>
+  </section>
+
+  <section class="trust" id="trust"></section>
+
+  <section class="kw"><h4>En çok aranan kelimeler</h4><div class="chips" id="kw"></div></section>
+
+  <section class="about" id="hakkimizda">
+    <h2 id="aboutTitle"></h2>
+    <p id="aboutText"></p>
+    <div class="faq-wrap" id="sss"></div>
+  </section>
+</main>
+
+<footer id="iletisim"><div class="wrap">
+  <div class="fg">
+    <div><a href="#" class="logo" id="logo2" onclick="goHome();return false"></a><p id="footAbout"></p></div>
+    <div class="fc"><h5>Mağaza</h5><a onclick="setCat('Tümü',true)">Tüm Ürünler</a><a onclick="showFavs()">Favorilerim</a><a onclick="openSide('cart')">Sepetim</a><a href="#nasil">Nasıl Sipariş Verilir?</a></div>
+    <div class="fc"><h5>Yardım</h5><a onclick="info('teslimat')">Kargo & Teslimat</a><a onclick="info('iade')">İade & Değişim</a><a onclick="info('mesafeli')">Mesafeli Satış</a><a onclick="info('gizlilik')">Gizlilik / KVKK</a></div>
+    <div class="fc"><h5>İletişim</h5><a id="fMap" target="_blank" rel="noopener"></a><a id="fWa" target="_blank" rel="noopener">WhatsApp</a><a id="fIg" target="_blank" rel="noopener">Instagram</a><div class="pays"><span>Havale / EFT</span></div></div>
+  </div>
+  <div class="fb"><span id="fCopy"></span><span id="fCity"></span></div>
+</div></footer>
+
+<a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<button class="top-float" id="topFloat" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Yukarı"><svg class="ico" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></svg></button>
+
+<nav class="bnav">
+  <button onclick="goHome()"><svg class="ico" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>Anasayfa</button>
+  <button onclick="showFavs()"><svg class="ico" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><span class="badge" data-fav>0</span>Favorilerim</button>
+  <button onclick="openSide('cart')"><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="badge" data-cart>0</span>Sepetim</button>
+  <a id="bnWa" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg>WhatsApp</a>
+</nav>
+
+<div class="overlay" id="overlay" onclick="closeAll()"></div>
+
+<aside class="side left" id="menu" aria-label="Menü">
+  <div class="side-h"><h3 id="menuBrand">Menü</h3><button class="xbtn" onclick="closeAll()" aria-label="Kapat"><svg class="ico" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+  <div class="mlist" id="menuList"></div>
+</aside>
+
+<aside class="side right" id="cart" aria-label="Sepet">
+  <div class="side-h"><h3>Sepetim</h3><button class="xbtn" onclick="closeAll()" aria-label="Kapat"><svg class="ico" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+  <div class="side-items" id="cartItems"></div>
+  <div class="side-f" id="cartFoot">
+    <div class="shipbar" id="shipbar"></div>
+    <div class="sr2"><span>Ara toplam</span><span id="subtotal"></span></div>
+    <div class="sr2"><span>Kargo</span><span id="shipVal"></span></div>
+    <div class="sr2 total"><span>Toplam</span><span id="total"></span></div>
+    <button class="bigbtn" onclick="openCheckout()">Siparişi Tamamla</button>
+  </div>
+</aside>
+
+<div class="modal" id="qvModal" role="dialog" aria-modal="true"><button class="xbtn" onclick="closeAll()" aria-label="Kapat"><svg class="ico" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button><div id="qvContent"></div></div>
+<div class="modal" id="coModal" role="dialog" aria-modal="true" style="width:min(920px,96vw)"><button class="xbtn" onclick="closeAll()" aria-label="Kapat"><svg class="ico" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button><div id="coContent"></div></div>
+<div class="modal" id="infoModal" role="dialog" aria-modal="true" style="width:min(580px,94vw)"><button class="xbtn" onclick="closeAll()" aria-label="Kapat"><svg class="ico" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button><div style="padding:32px 28px"><h3 id="infoTitle" style="font-size:22px;font-weight:700;margin-bottom:12px;padding-right:40px"></h3><div id="infoBody" style="color:#444;line-height:1.75"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ============================================================
+   AYARLAR — HER MAGAZA ICIN SADECE BURAYI DEGISTIR
+   whatsapp : 90 ile baslayan numara (ornek 905321234567). Bossa
+              siparis mesaji kopyalanir ve waLink acilir.
+   products.oldPrice : ustu cizili eski fiyat (yoksa sil)
+   products.fit/bg   : fotograf yerlesimi ve zemin rengi
+   ============================================================ */
+const CONFIG = {
+  logoA:"CELLO", logoB:"GİYİM", fullName:"Cello Giyim",
+  city:"İstanbul · Bağcılar", years:18, followers:"43,4B",
+  whatsapp:"", waLink:"https://wa.me/message/4H7XXRU5FST2K1",
+  instagram:"cellogiyim2", mapsQuery:"Cello Giyim Bağcılar İstanbul",
+  currency:"₺", shipping:{fee:99, freeOver:2000},
+  bank:{name:"Banka Adı", iban:"TR00 0000 0000 0000 0000 0000 00", holder:"Cello Giyim"},
+  hero:{label:"Kış sezonu", big:"İthal mont", productId:1, fromCat:"Mont",
+        feats:[["truck","Türkiye geneli","Her yere kargo"],["store","18 yıllık","Bağcılar mağaza"],["chat","WhatsApp","Hızlı destek"]], cta:"Alışverişe başla"},
+  tiles:[
+    {type:"product", productId:2, title:"Kısa şişme<br>mont"},
+    {type:"product", productId:3, title:"Oversize<br>kapüşonlu"},
+    {type:"product", productId:7, title:"Fermuarlı<br>triko kazak"},
+    {type:"category", category:"Mont", imgFrom:1, title:"Mont<br>modelleri"},
+    {type:"category", category:"Sweat", imgFrom:4, title:"Sweat<br>modelleri"},
+    {type:"store", title:"Mağazamıza<br>bekleriz", text:"18 yıldır İstanbul Bağcılar'da. Gelip deneyebilir, yerinde alabilirsiniz."}
+  ],
+  categories:["Tümü","Mont","Sweat","Kazak"],
+  keywords:["Erkek Mont","Şişme Mont","Kapüşonlu Sweat","Triko Kazak","Yarım Fermuar","Kışlık Kombin"],
+  aboutTitle:"Cello Giyim — Bağcılar Erkek Giyim Mağazası",
+  about:"Cello Giyim 18 yıldır İstanbul Bağcılar'da erkek giyim satıyor. Mont, sweat ve kazak modellerimizi mağazamızda olduğu gibi online olarak da sunuyoruz. Siparişlerinizi Türkiye'nin her yerine kargoluyoruz; ödemeler Havale/EFT ile alınır. Ürünler hakkında her türlü sorunuz için WhatsApp hattımızdan bize ulaşabilir, Bağcılar mağazamıza gelerek ürünleri yerinde deneyebilirsiniz.",
+  products:[
+    {id:1,name:"Dik Yaka Şişme Mont",category:"Mont",price:1499,oldPrice:1999,img:"assets/m-01.jpg",fit:"cover",bg:"#e8e9e8",sizes:["S","M","L","XL","XXL"],desc:"Dik yakalı, fermuarlı şişme mont. Su itici dış yüzey, elyaf dolgu ve yan cepler.",fabric:"Su itici polyester, elyaf dolgu",fitName:"Regular"},
+    {id:2,name:"Kısa Şişme Mont",category:"Mont",price:1299,oldPrice:1699,img:"assets/m-02.jpg",fit:"cover",bg:"#f1f1f1",sizes:["S","M","L","XL"],desc:"Kısa kesim, dik yaka şişme mont. Hafif ve sıcak tutan dolgu.",fabric:"Polyester, elyaf dolgu",fitName:"Kısa kesim",isNew:true},
+    {id:3,name:"Oversize Kapüşonlu Sweat",category:"Sweat",price:749,oldPrice:899,img:"assets/u-03.jpg",fit:"cover",bg:"#ffffff",sizes:["S","M","L","XL"],desc:"Geniş kalıp kapüşonlu sweat, içi şardonlu.",fabric:"3 iplik şardonlu",fitName:"Oversize"},
+    {id:4,name:"Yarım Fermuar Sweatshirt",category:"Sweat",price:649,img:"assets/u-04.jpg",fit:"cover",bg:"#bdbdbd",sizes:["S","M","L","XL","XXL"],desc:"Polo yaka, yarım fermuarlı sweatshirt.",fabric:"Pamuk / Polyester",fitName:"Regular",isNew:true},
+    {id:5,name:"Basic Sweatshirt",category:"Sweat",price:499,img:"assets/u-01.jpg",fit:"contain",bg:"#d9d9d9",sizes:["S","M","L","XL","XXL"],desc:"Bisiklet yaka basic sweatshirt. Her kombine uyar.",fabric:"3 iplik şardonlu",fitName:"Regular"},
+    {id:6,name:"Örme Triko Kazak",category:"Kazak",price:599,oldPrice:749,img:"assets/u-02.jpg",fit:"cover",bg:"#3a3a3e",sizes:["M","L","XL","XXL"],desc:"Burgu örgü detaylı, bisiklet yaka triko kazak.",fabric:"Akrilik / Pamuk",fitName:"Regular"},
+    {id:7,name:"Fermuarlı Triko Kazak",category:"Kazak",price:699,img:"assets/u-05.jpg",fit:"contain",bg:"#ffffff",sizes:["M","L","XL","XXL"],desc:"Dik yaka, yarım fermuarlı burgu örgü kazak.",fabric:"Akrilik / Yün",fitName:"Regular"}
+  ]
+};
+
+/* ---------- YARDIMCILAR ---------- */
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money=n=>CONFIG.currency+n.toLocaleString("tr-TR",{minimumFractionDigits:2,maximumFractionDigits:2});
+const short=n=>n.toLocaleString("tr-TR")+CONFIG.currency;
+const P=id=>CONFIG.products.find(p=>p.id===id);
+const mapsUrl="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(CONFIG.mapsQuery);
+const igUrl="https://instagram.com/"+CONFIG.instagram;
+function waHref(t){return CONFIG.whatsapp?"https://wa.me/"+CONFIG.whatsapp+(t?"?text="+encodeURIComponent(t):""):CONFIG.waLink;}
+function copyText(t){let ok=false;try{const ta=document.createElement("textarea");ta.value=t;ta.setAttribute("readonly","");ta.style.cssText="position:fixed;top:-1000px;opacity:0";document.body.appendChild(ta);ta.select();ok=document.execCommand("copy");ta.remove();}catch(e){}
+  if(!ok&&navigator.clipboard){navigator.clipboard.writeText(t).catch(()=>{});ok=true;}return ok;}
+function waSend(t){if(CONFIG.whatsapp){window.open(waHref(t),"_blank");return;}copyText(t);toast("Mesaj kopyalandı — WhatsApp'ta yapıştırıp gönderin");window.open(CONFIG.waLink,"_blank");}
+const ICON={
+  box:'<svg class="ico" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/></svg>',
+  truck:'<svg class="ico" viewBox="0 0 24 24"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+  tag:'<svg class="ico" viewBox="0 0 24 24"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg>',
+  shield:'<svg class="ico" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>',
+  store:'<svg class="ico" viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v8h14v-8M10 21v-5h4v5"/></svg>',
+  chat:'<svg class="ico" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg>',
+  swap:'<svg class="ico" viewBox="0 0 24 24"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>',
+  pin:'<svg class="ico" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  ig:'<svg class="ico" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>',
+  cart:'<svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>',
+  bag:'<svg class="ico" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>',
+  arrow:'<svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>',
+  chev:'<svg class="ico" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>',
+  share:'<svg class="ico" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>',
+  copy:'<svg class="ico" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
+  heart:'<svg class="ico" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>'
+};
+function imgTag(p){return `<img src="${p.img}" alt="${esc(p.name)}" loading="lazy" class="${p.fit==='contain'?'contain':''}" style="background:${p.bg}">`;}
+function disc(p){return p.oldPrice&&p.oldPrice>p.price?Math.round((1-p.price/p.oldPrice)*100):0;}
+function badge(p){const d=disc(p);return d?`<span class="rb">%${d}</span>`:p.isNew?`<span class="rb new">Yeni</span>`:"";}
+function priceHTML(p){return `<span class="prc">${p.oldPrice?`<span class="oldp">${money(p.oldPrice)}</span>`:""}<span class="np">${money(p.price)}</span></span>`;}
+function isDark(hex){const n=parseInt(hex.slice(1),16);return ((n>>16)*299+(n>>8&255)*587+(n&255)*114)/1000<120;}
+function readQty(el){const v=parseInt(el&&el.value,10);return isNaN(v)||v<1?1:Math.min(v,99);}
+
+let cart=[],favs=[];
+try{cart=JSON.parse(localStorage.getItem("cello_cart"))||[];favs=JSON.parse(localStorage.getItem("cello_favs"))||[];}catch(e){}
+cart=cart.filter(c=>P(c.id));
+const save=()=>{try{localStorage.setItem("cello_cart",JSON.stringify(cart));localStorage.setItem("cello_favs",JSON.stringify(favs));}catch(e){}};
+
+/* ---------- SABIT ALANLAR ---------- */
+const logoHTML=`<span class="a">${esc(CONFIG.logoA)}</span><span class="b">${esc(CONFIG.logoB)}</span>`;
+$("logo").innerHTML=logoHTML;$("logo2").innerHTML=logoHTML;$("menuBrand").innerHTML=`<span class="logo" style="font-size:22px">${logoHTML}</span>`;
+$("topLeft").innerHTML=`Türkiye'nin her yerine kargo · <b>Havale / EFT</b> ile ödeme`+(CONFIG.shipping.freeOver?` · ${short(CONFIG.shipping.freeOver)} üzeri kargo bedava`:"");
+$("topMap").textContent=CONFIG.city;$("topMap").href=mapsUrl;$("topWa").href=waHref();
+$("waFloat").href=waHref("Merhaba, ürünleriniz hakkında bilgi almak istiyorum.");$("bnWa").href=$("waFloat").href;
+$("fMap").textContent=CONFIG.city;$("fMap").href=mapsUrl;$("fWa").href=waHref();$("fIg").href=igUrl;
+$("fCopy").textContent="© "+new Date().getFullYear()+" "+CONFIG.fullName;$("fCity").textContent=CONFIG.city+" · "+CONFIG.years+". yıl";
+$("footAbout").textContent=CONFIG.years+" yıldır "+CONFIG.city.replace(" · "," ")+"'da erkek giyim. Türkiye'nin her yerine kargo.";
+$("aboutTitle").textContent=CONFIG.aboutTitle;$("aboutText").textContent=CONFIG.about;
+
+/* HERO */
+(function(){
+  const h=CONFIG.hero,p=P(h.productId);
+  const minPrice=Math.min(...CONFIG.products.filter(x=>x.category===h.fromCat).map(x=>x.price));
+  $("hero").innerHTML=`<span class="dots tl"></span><span class="dots br"></span>
+  <div class="hero-l"><span class="tilt">${esc(h.label)}</span>
+    <div class="big">${esc(h.big)}</div>
+    <div class="from">Modelleri</div>
+    <div class="pricebox"><span>${short(minPrice)}<small>'den</small></span></div>
+    <div class="feats">${h.feats.map(f=>`<div class="feat"><span class="fi">${ICON[f[0]]}</span><span class="ft">${esc(f[1])}</span><span class="fs">${esc(f[2])}</span></div>`).join("")}</div>
+    <button class="cta" onclick="setCat('${h.fromCat}',true)"><span class="ci">${ICON.cart}</span>${esc(h.cta)} ${ICON.chev.replace('class="ico"','class="ico" style="width:1em;height:1em;stroke-width:2.4"')}</button>
+  </div>
+  <div class="hero-r"><img src="${p.img}" alt="${esc(p.name)}"><span class="slash"></span></div>
+  <span class="seal"><span><b>${CONFIG.years}.</b>yıl</span></span>`;
+})();
+
+/* TILES */
+$("tiles").innerHTML=CONFIG.tiles.map(t=>{
+  if(t.type==="product"){const p=P(t.productId),white=p.bg==="#ffffff",dk=!white&&isDark(p.bg);
+    return `<div class="tile prod" style="background:${white?'#f6f6f6':p.bg}" onclick="openQuick(${p.id})"><div class="tt"${dk?' style="color:#fff"':''}>${t.title}</div>
+      <div class="im"><img src="${p.img}" alt="${esc(p.name)}" loading="lazy"${white?' style="mix-blend-mode:multiply"':''}></div>
+      <div class="bot">${p.oldPrice?`<div class="op">${short(p.oldPrice)}</div>`:""}<div class="pp"${dk?' style="color:#fff"':''}>${short(p.price)}</div>
+      <button class="pill" onclick="event.stopPropagation();openQuick(${p.id})">${ICON.bag}Şimdi satın al</button></div></div>`;}
+  if(t.type==="category"){const p=P(t.imgFrom);
+    return `<div class="tile cat${isDark(p.bg)?' dark':''}" style="--tb:${p.bg};background:${p.bg}" onclick="setCat('${t.category}',true)"><img src="${p.img}" alt="${esc(t.category)}" loading="lazy"><div class="cin"><div class="tt">${t.title}</div><span class="pill">Modelleri keşfet ${ICON.arrow}</span></div></div>`;}
+  return `<a class="tile red" href="${mapsUrl}" target="_blank" rel="noopener"><div class="tt">${t.title}</div><p>${esc(t.text)}</p><span class="pill">Yol tarifi al ${ICON.arrow}</span></a>`;
+}).join("");
+
+/* MAGAZA */
+$("magaza").innerHTML=`<div class="store-l"><div class="ey">Mağazamız</div><h2>${CONFIG.years} yıldır<br>${esc(CONFIG.city.split(" · ").reverse().join(", "))}'da</h2>
+  <p>Online siparişlerinizi Türkiye'nin her yerine gönderiyoruz. Yakındaysanız mağazamıza gelip ürünleri yerinde deneyebilirsiniz.</p>
+  <div class="store-btns"><a class="sbtn r" href="${mapsUrl}" target="_blank" rel="noopener">${ICON.pin}Yol tarifi al</a><a class="sbtn g" href="${waHref()}" target="_blank" rel="noopener">${ICON.chat}WhatsApp</a><a class="sbtn o" href="${igUrl}" target="_blank" rel="noopener">${ICON.ig}Instagram</a></div></div>
+  <div class="store-r"><div class="stat"><div class="n">${CONFIG.years}</div><div class="l">Yıllık mağaza</div></div><div class="stat"><div class="n">${esc(CONFIG.followers)}</div><div class="l">Instagram takipçi</div></div><div class="stat"><div class="n">81</div><div class="l">İle kargo</div></div></div>`;
+
+/* ADIMLAR */
+const STEPS=[["Ürünü seçin","Bedeninizi seçip ürünü sepete ekleyin. İstediğiniz kadar ürün ekleyebilirsiniz."],["Havale / EFT yapın","Teslimat bilgilerinizi girin. IBAN bilgimiz sipariş ekranında görünür, tek dokunuşla kopyalayabilirsiniz."],["Dekontu gönderin","Siparişiniz WhatsApp'tan bize ulaşır. Dekontu aynı sohbetten iletin, siparişiniz kargoya verilsin."]];
+$("steps").innerHTML=STEPS.map((s,i)=>`<div class="step"><span class="no">${i+1}</span><h4>${esc(s[0])}</h4><p>${esc(s[1])}</p></div>`).join("");
+
+/* GUVEN */
+const TRUST=[["truck","Türkiye geneli kargo","81 ilin tamamına gönderim"],["store",CONFIG.years+" yıllık mağaza",CONFIG.city],["swap","Beden değişimi","Olmayan beden için WhatsApp'tan yazın"],["shield","Güvenli ödeme","Havale / EFT ile ödeme"]];
+$("trust").innerHTML=TRUST.map(t=>`<div class="tr">${ICON[t[0]]}<div><div class="tt">${esc(t[1])}</div><div class="ts">${esc(t[2])}</div></div></div>`).join("");
+
+/* KELIMELER + SSS */
+$("kw").innerHTML=CONFIG.keywords.map(k=>`<button class="chip" onclick="kwSearch('${esc(k)}')">${esc(k)}</button>`).join("");
+function kwSearch(k){const map={"Erkek Mont":"Mont","Şişme Mont":"Şişme","Kapüşonlu Sweat":"Kapüşonlu","Triko Kazak":"Triko","Yarım Fermuar":"Fermuar","Kışlık Kombin":""};const w=map[k];if(w===""||w===undefined){setCat("Tümü",true);return;}if(CONFIG.categories.includes(w)){setCat(w,true);return;}search(w);}
+const FAQ=[
+  ["Ödemeyi nasıl yapabilirim?","Ödemeler yalnızca Havale / EFT ile alınır. Siparişi tamamladığınızda IBAN bilgimiz ekranda görünür; dekontu WhatsApp'tan iletmeniz yeterli."],
+  ["Kargo ne zaman çıkar?","Ödemeniz onaylandıktan sonra siparişiniz kargoya verilir. Türkiye'nin her yerine gönderim yapıyoruz."+(CONFIG.shipping.freeOver?" "+short(CONFIG.shipping.freeOver)+" ve üzeri siparişlerde kargo ücretsizdir.":"")],
+  ["Bedenim olmazsa ne yapabilirim?","Ürünü teslim aldıktan sonra beden değişimi için WhatsApp hattımızdan bize yazın, size yol gösterelim."],
+  ["Mağazadan gelip alabilir miyim?","Evet. "+CONFIG.city+" mağazamıza gelip ürünleri yerinde deneyebilir ve alabilirsiniz."]
+];
+$("sss").innerHTML=FAQ.map(f=>`<details class="faq"><summary>${esc(f[0])}<span class="pl">+</span></summary><div class="a">${esc(f[1])}</div></details>`).join("");
+
+/* MENU */
+$("menuList").innerHTML=CONFIG.categories.map(c=>`<button onclick="setCat('${c}',true)">${esc(c==="Tümü"?"Tüm Ürünler":c)} ${ICON.chev}</button>`).join("")+
+  `<button class="sm" onclick="showFavs()">Favorilerim ${ICON.chev}</button><a class="sm" href="#nasil" onclick="closeAll()">Nasıl sipariş verilir? ${ICON.chev}</a><a class="sm" href="#magaza" onclick="closeAll()">Mağazamız ${ICON.chev}</a><a class="sm" href="${waHref()}" target="_blank" rel="noopener">WhatsApp ${ICON.chev}</a><a class="sm" href="${igUrl}" target="_blank" rel="noopener">Instagram ${ICON.chev}</a>`;
+
+/* ---------- URUN LISTESI ---------- */
+let state={cat:"Tümü",q:"",favOnly:false};
+function renderFilters(){
+  $("filters").innerHTML=CONFIG.categories.map(c=>`<button class="chip${!state.favOnly&&!state.q&&state.cat===c?' active':''}" onclick="setCat('${c}')">${esc(c)}</button>`).join("")+
+    `<button class="chip${state.favOnly?' active':''}" onclick="showFavs(false)">♥ Favoriler</button>`;
+}
+function list(){const q=state.q.toLocaleLowerCase("tr-TR");
+  return CONFIG.products.filter(p=>(!state.favOnly||favs.includes(p.id))&&(state.cat==="Tümü"||p.category===state.cat)&&(!q||(p.name+" "+p.category).toLocaleLowerCase("tr-TR").includes(q)));}
+function renderGrid(){
+  renderFilters();const items=list();
+  $("gridTitle").textContent=state.favOnly?"Favorilerim":state.q?`"${state.q}" araması`:state.cat==="Tümü"?"Yeni Sezon":state.cat+" Modelleri";
+  $("resultNote").textContent=(state.q||state.favOnly)?items.length+" ürün":"";
+  if(!items.length){$("grid").innerHTML=`<div class="empty-res">${state.favOnly?"Henüz favori ürününüz yok. Ürünlerdeki kalbe dokunarak ekleyebilirsiniz.":"Aramanıza uygun ürün bulunamadı."}<br><button onclick="setCat('Tümü')">Tüm ürünleri göster</button></div>`;return;}
+  $("grid").innerHTML=items.map(p=>`
+    <div class="card">
+      <div class="ph" onclick="openQuick(${p.id})">${imgTag(p)}${badge(p)}<span class="qv">Hızlı bak</span></div>
+      <div class="nm" onclick="openQuick(${p.id})">${esc(p.name)}</div>
+      <div class="sr">${p.sizes.join(" · ")}</div>
+      <div class="prow">${priceHTML(p)}<button class="fav${favs.includes(p.id)?' on':''}" onclick="toggleFav(${p.id},this)" aria-label="Favorilere ekle">${ICON.heart}</button></div>
+      <button class="addbtn" onclick="openQuick(${p.id},true)">Sepete Ekle</button>
+    </div>`).join("");
+}
+function setCat(c,scroll){state={cat:c,q:"",favOnly:false};$("q").value="";closeAll();renderGrid();if(scroll)$("urunler").scrollIntoView({behavior:"smooth"});}
+function search(w){state={cat:"Tümü",q:w,favOnly:false};$("q").value=w;closeAll();renderGrid();$("urunler").scrollIntoView({behavior:"smooth"});}
+function doSearch(e){e.preventDefault();const v=$("q").value.trim();if(!v){setCat("Tümü",true);return;}search(v);}
+function toggleSearch(){const r=$("searchRow");r.classList.toggle("open");if(r.classList.contains("open"))$("q").focus();}
+function showFavs(scroll){state={cat:"Tümü",q:"",favOnly:true};closeAll();renderGrid();if(scroll!==false)$("urunler").scrollIntoView({behavior:"smooth"});}
+function goHome(){setCat("Tümü");closeAll();scrollTo({top:0,behavior:"smooth"});}
+function toggleFav(id,btn){const i=favs.indexOf(id);if(i>-1){favs.splice(i,1);toast("Favorilerden çıkarıldı");}else{favs.push(id);toast("Favorilere eklendi");}save();updateBadges();
+  if(state.favOnly)renderGrid();else document.querySelectorAll(`.fav[data-id="${id}"]`).forEach(b=>b.classList.toggle("on",favs.includes(id)));if(btn&&!state.favOnly)btn.classList.toggle("on",favs.includes(id));}
+
+/* ---------- URUN DETAY ---------- */
+let qvP=null,qvSize=null;
+function openQuick(id,fromAdd){
+  const p=P(id);if(!p)return;qvP=p;qvSize=p.sizes.length===1?p.sizes[0]:null;const d=disc(p);
+  $("qvContent").innerHTML=`<div class="qv-grid"><div class="qv-img">${imgTag(p)}${badge(p)}</div><div class="qv-b">
+    <div class="ct">${esc(p.category)}</div><h3>${esc(p.name)}</h3>
+    ${priceHTML(p)}${d?`<div><span class="save">${short(p.oldPrice-p.price)} indirim</span></div>`:""}
+    <p class="desc">${esc(p.desc)}</p>
+    <div class="lblrow"><b>Beden</b><button onclick="sizeGuide()">Beden tablosu</button></div>
+    <div class="sizes" id="qvSizes">${p.sizes.map(s=>`<button class="sz${qvSize===s?' on':''}" onclick="pickSize('${s}',this)">${s}</button>`).join("")}</div>
+    <div class="szmsg" id="szmsg"></div>
+    <div class="qv-buy"><div class="qty"><button onclick="stepQ(-1)" aria-label="Azalt">−</button><input id="qvQty" type="number" min="1" value="1" aria-label="Adet"><button onclick="stepQ(1)" aria-label="Artır">+</button></div><button class="addbtn" onclick="qvAdd()">Sepete Ekle</button></div>
+    <button class="btn-wa" onclick="askWa()">${ICON.wa}WhatsApp'tan sor</button>
+    <ul class="perks"><li>${ICON.truck}Türkiye'nin her yerine kargo${CONFIG.shipping.freeOver?`, ${short(CONFIG.shipping.freeOver)} üzeri ücretsiz`:""}</li><li>${ICON.shield}Havale / EFT ile ödeme</li><li>${ICON.store}${esc(CONFIG.city)} mağazasında da satışta</li></ul>
+    <ul class="spec"><li><span>Kumaş</span><span>${esc(p.fabric)}</span></li><li><span>Kalıp</span><span>${esc(p.fitName)}</span></li><li><span>Bedenler</span><span>${p.sizes.join(", ")}</span></li></ul>
+    <button class="share" onclick="shareP()">${ICON.share}Ürünü paylaş</button>
+  </div></div>`;
+  openModal("qvModal");
+  try{history.replaceState(null,"","#urun-"+p.id);}catch(e){}
+  if(fromAdd&&!qvSize)$("szmsg").textContent="Sepete eklemek için beden seçin.";
+}
+function pickSize(s,el){qvSize=s;document.querySelectorAll("#qvSizes .sz").forEach(b=>b.classList.remove("on"));el.classList.add("on");$("qvSizes").classList.remove("err");$("szmsg").textContent="";}
+function stepQ(d){const el=$("qvQty");el.value=Math.min(99,Math.max(1,readQty(el)+d));}
+function qvAdd(){if(!qvSize){$("qvSizes").classList.add("err");$("szmsg").textContent="Lütfen beden seçin.";return;}const q=readQty($("qvQty"));addToCart(qvP,qvSize,q);toast(`${qvP.name} (${qvSize}) sepete eklendi`);openSide("cart");}
+function askWa(){waSend(`Merhaba, "${qvP.name}"${qvSize?" ("+qvSize+" beden)":""} hakkında bilgi almak istiyorum. ${location.href.split("#")[0]}#urun-${qvP.id}`);}
+function shareP(){const url=location.href.split("#")[0]+"#urun-"+qvP.id,t=qvP.name+" — "+CONFIG.fullName;
+  if(navigator.share){navigator.share({title:t,url}).catch(()=>{});}else{copyText(url);toast("Ürün linki kopyalandı");}}
+function sizeGuide(){$("infoTitle").textContent="Beden tablosu";$("infoBody").innerHTML=`<table class="sgt"><tr><th>Beden</th><th>Göğüs (cm)</th><th>Boy (cm)</th></tr>${[["S",104,68],["M",110,70],["L",116,72],["XL",122,74],["XXL",128,76]].map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join("")}</table><p style="font-size:12.5px;margin-top:12px;color:#666">Ölçüler yaklaşıktır, modele göre değişebilir. Emin olamazsanız WhatsApp'tan boy-kilonuzu yazın, beden önerelim.</p>`;openModal("infoModal",true);}
+
+/* ---------- SEPET ---------- */
+function addToCart(p,size,q){const ex=cart.find(x=>x.id===p.id&&x.size===size);if(ex)ex.qty=Math.min(99,ex.qty+q);else cart.push({id:p.id,size,qty:q});save();renderCart();}
+function changeQty(i,d){const it=cart[i];if(!it)return;it.qty+=d;if(it.qty<=0)cart.splice(i,1);save();renderCart();}
+function removeItem(i){cart.splice(i,1);save();renderCart();}
+function lines(){return cart.map(c=>({...P(c.id),size:c.size,qty:c.qty}));}
+function totals(){const l=lines(),sub=l.reduce((s,i)=>s+i.qty*i.price,0),qty=l.reduce((s,i)=>s+i.qty,0);const s=CONFIG.shipping;const ship=!qty?0:(s.freeOver&&sub>=s.freeOver?0:s.fee);return{qty,sub,ship,total:sub+ship};}
+function updateBadges(){const t=totals();document.querySelectorAll("[data-cart]").forEach(b=>b.textContent=t.qty);document.querySelectorAll("[data-fav]").forEach(b=>b.textContent=favs.length);}
+function renderCart(){
+  updateBadges();const l=lines(),t=totals();
+  if(!l.length){$("cartItems").innerHTML=`<div class="empty">Sepetiniz boş.<br><button class="addbtn" onclick="setCat('Tümü',true)">Alışverişe başla</button></div>`;$("cartFoot").style.display="none";return;}
+  $("cartFoot").style.display="block";
+  $("cartItems").innerHTML=l.map((i,ix)=>`<div class="ci"><div class="cim"><img src="${i.img}" alt="" style="background:${i.bg}${i.fit==='contain'?';object-fit:contain':''}"></div>
+    <div class="cd"><div class="cn">${esc(i.name)}</div><div class="cm">Beden: ${esc(i.size)} · ${money(i.price)}</div>
+    <div class="qty"><button onclick="changeQty(${ix},-1)" aria-label="Azalt">−</button><span>${i.qty}</span><button onclick="changeQty(${ix},1)" aria-label="Artır">+</button></div></div>
+    <div><div class="cp">${money(i.price*i.qty)}</div><button class="rm" onclick="removeItem(${ix})">Kaldır</button></div></div>`).join("");
+  $("subtotal").textContent=money(t.sub);$("shipVal").textContent=t.ship?money(t.ship):"Ücretsiz";$("total").textContent=money(t.total);
+  const fo=CONFIG.shipping.freeOver,sb=$("shipbar");
+  if(!fo){sb.style.display="none";}else if(t.sub>=fo){sb.className="shipbar ok";sb.innerHTML=`✓ Kargo bedava!<div class="trk"><div class="fill" style="width:100%"></div></div>`;}
+  else{sb.className="shipbar";sb.innerHTML=`Ücretsiz kargo için <b>${money(fo-t.sub)}</b> daha ekleyin.<div class="trk"><div class="fill" style="width:${Math.round(t.sub/fo*100)}%"></div></div>`;}
+}
+
+/* ---------- SIPARIS ---------- */
+const ibanBox=()=>{const b=CONFIG.bank;return `<div class="iban">Banka: <b>${esc(b.name)}</b><br>Alıcı: <b>${esc(b.holder)}</b><br>IBAN: <b>${esc(b.iban)}</b><br><button class="copy" onclick="copyIban()">${ICON.copy}IBAN'ı kopyala</button></div>`;};
+function copyIban(){copyText(CONFIG.bank.iban.replace(/\s/g,""));toast("IBAN kopyalandı");}
+function openCheckout(){if(!cart.length)return;renderCheckout();openModal("coModal");}
+function renderCheckout(){
+  const t=totals();
+  $("coContent").innerHTML=`<div class="co-grid"><div class="co-form"><h3>Siparişi tamamla</h3><div class="sub">Teslimat bilgilerinizi girin. Ödeme Havale / EFT ile yapılır.</div>
+    <div class="field" id="f-ad"><label>Ad soyad *</label><input id="c-ad" autocomplete="name"></div>
+    <div class="field" id="f-tel"><label>Telefon *</label><input id="c-tel" inputmode="tel" autocomplete="tel" placeholder="05xx xxx xx xx"></div>
+    <div class="two"><div class="field" id="f-il"><label>İl *</label><input id="c-il" autocomplete="address-level1"></div><div class="field" id="f-ilce"><label>İlçe *</label><input id="c-ilce" autocomplete="address-level2"></div></div>
+    <div class="field" id="f-adres"><label>Açık adres *</label><textarea id="c-adres" rows="2" autocomplete="street-address"></textarea></div>
+    <div class="field"><label>Sipariş notu</label><input id="c-not" placeholder="İsteğe bağlı"></div>
+    <div class="plbl">Ödeme yöntemi</div>
+    <div class="paybox"><div class="pt">Havale / EFT</div><div class="pd">Siparişi onayladıktan sonra aşağıdaki hesaba ödeme yapın, dekontu WhatsApp'tan iletin.</div>${ibanBox()}</div>
+  </div><div class="co-sum"><h4>Sipariş özeti</h4>
+    ${lines().map(i=>`<div class="co-line"><span>${esc(i.name)} <span class="q">· ${esc(i.size)} · ×${i.qty}</span></span><span>${money(i.price*i.qty)}</span></div>`).join("")}
+    <div class="co-line" style="border:none;padding-top:14px"><span class="q">Ara toplam</span><span>${money(t.sub)}</span></div>
+    <div class="co-line" style="border:none;padding:3px 0"><span class="q">Kargo</span><span>${t.ship?money(t.ship):"Ücretsiz"}</span></div>
+    <div class="sr2 total" style="margin-top:12px"><span>Toplam</span><span>${money(t.total)}</span></div>
+    <button class="bigbtn" onclick="confirmOrder()">Siparişi onayla</button>
+    <div class="secure">Siparişiniz WhatsApp üzerinden ${esc(CONFIG.fullName)}'ya iletilir.<br>Bilgileriniz yalnızca bu sipariş için kullanılır.</div></div></div>`;
+}
+function val(id){const el=$(id);return el?(el.value||"").trim():"";}
+function confirmOrder(){
+  const req=[["c-ad","f-ad"],["c-tel","f-tel"],["c-il","f-il"],["c-ilce","f-ilce"],["c-adres","f-adres"]];let ok=true,first=null;
+  req.forEach(([i,f])=>{if(!val(i)){$(f).classList.add("err");ok=false;first=first||i;}else $(f).classList.remove("err");});
+  if(!ok){toast("Lütfen zorunlu alanları doldurun");$(first).focus();return;}
+  const t=totals(),ono=String(Math.floor(100000+Math.random()*900000));
+  const m=[`*YENİ SİPARİŞ #${ono} — ${CONFIG.fullName}*`,"",`*Ad soyad:* ${val("c-ad")}`,`*Telefon:* ${val("c-tel")}`,`*Adres:* ${val("c-adres")}, ${val("c-ilce")}/${val("c-il")}`];
+  if(val("c-not"))m.push(`*Not:* ${val("c-not")}`);
+  m.push("","*Ürünler:*");lines().forEach(i=>m.push(`• ${i.name} — ${i.size} beden ×${i.qty} — ${money(i.price*i.qty)}`));
+  m.push("",`Ara toplam: ${money(t.sub)}`,`Kargo: ${t.ship?money(t.ship):"Ücretsiz"}`,`*Toplam: ${money(t.total)}*`,`*Ödeme: Havale / EFT*`);
+  waSend(m.join("\n"));
+  $("coContent").innerHTML=`<div class="done"><div class="ok">✓</div><h3>Siparişiniz alındı</h3><div class="ono">Sipariş no: #${ono} · Toplam ${money(t.total)}</div>
+    <p>Siparişiniz WhatsApp üzerinden bize iletildi. Aşağıdaki hesaba ödemeyi yapıp dekontu aynı sohbetten gönderin; ödeme onayından sonra siparişiniz kargoya verilir.</p>
+    ${ibanBox()}
+    <button class="bigbtn" onclick="waSend('Merhaba, #${ono} numaralı siparişimin dekontunu gönderiyorum.')">${ICON.wa.replace('<svg','<svg style="width:20px;height:20px"')}Dekontu WhatsApp'tan gönder</button>
+    <button class="bigbtn dark" onclick="closeAll()">Alışverişe devam et</button></div>`;
+  cart=[];save();renderCart();
+}
+
+/* ---------- BILGI SAYFALARI ---------- */
+const INFO={
+  teslimat:["Kargo & Teslimat","Siparişler ödeme onayından sonra kargoya verilir. Türkiye'nin her yerine gönderim yapılır."+(CONFIG.shipping.freeOver?" "+short(CONFIG.shipping.freeOver)+" ve üzeri siparişlerde kargo ücretsizdir, altındaki siparişlerde kargo ücreti "+short(CONFIG.shipping.fee)+"'dir.":"")],
+  iade:["İade & Değişim","Beden değişimi ve iade talepleriniz için ürünü teslim aldıktan sonra WhatsApp hattımızdan bize ulaşın. Kullanılmamış ve etiketi sökülmemiş ürünlerde değişim yapılır."],
+  mesafeli:["Mesafeli Satış Sözleşmesi","Satıcı bilgileri, ürün, teslimat ve cayma hakkı koşulları bu bölümde yer alır. (Mağazanın yasal metni eklenecek.)"],
+  gizlilik:["Gizlilik / KVKK","Kişisel verileriniz yalnızca siparişinizin hazırlanması ve teslimatı için kullanılır, üçüncü kişilerle paylaşılmaz. (Mağazanın KVKK metni eklenecek.)"]
+};
+function info(k){$("infoTitle").textContent=INFO[k][0];$("infoBody").textContent=INFO[k][1];openModal("infoModal");}
+
+/* ---------- PANELLER ---------- */
+let lastModal=null;
+function openSide(id){closeAll();$("overlay").classList.add("open");$(id).classList.add("open");}
+function openModal(id,stack){if(stack&&$("qvModal").classList.contains("open")){lastModal="qvModal";$("qvModal").classList.remove("open");}else{lastModal=null;document.querySelectorAll(".side.open,.modal.open").forEach(e=>e.classList.remove("open"));}$("overlay").classList.add("open");$(id).classList.add("open");}
+function closeAll(){if(lastModal&&$("infoModal").classList.contains("open")){$("infoModal").classList.remove("open");$(lastModal).classList.add("open");lastModal=null;return;}
+  document.querySelectorAll(".overlay.open,.side.open,.modal.open").forEach(e=>e.classList.remove("open"));
+  if(location.hash.startsWith("#urun-")){try{history.replaceState(null,"",location.pathname+location.search);}catch(e){}}}
+let tT;function toast(m){const el=$("toast");el.textContent=m;el.classList.add("show");clearTimeout(tT);tT=setTimeout(()=>el.classList.remove("show"),2400);}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeAll();});
+addEventListener("scroll",()=>$("topFloat").classList.toggle("show",scrollY>600),{passive:true});
+function fromHash(){const m=location.hash.match(/^#urun-(\d+)$/);if(m&&P(+m[1]))openQuick(+m[1]);}
+addEventListener("hashchange",fromHash);
+
+renderGrid();renderCart();fromHash();
+</script>
+</body>
+</html>
